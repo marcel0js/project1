@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header><i class="fab fa-twitter"></i>
+
+        <button class="tweetbutton one">Tweet</button>
+
+    </header>
+    <div id="cover"></div>
+    <!-- <img class="profile" src="epaimage.jpg"> -->
+    <nav>
+
+        <button class="delbutton">Delete</button>
+
+    </nav>
+    <main>
+        <div class="container feed">
+            <div class="left-feed">
+                <p>U.S. EPA</p>
+                <p>@EPA</p>
+                <p>twitter.com/EPA</p>
+                <p>Joined May 2008</p>
+                <p>1,785 Photos and Videos</p>
+            </div>
+
+            <div class="center-feed">
+
+                <p></p>
+            </div>
+
+            <div class="right-feed">
+                <h2 id="rightside">New to Twitter</h2>
+                <p id="signuptext">Sign up now to get your own personalized timeline!</p>
+                <button class="signup">Sign up</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-container hide">
+        <div class="modal">
+            <h2>Write Tweet Here<span class="close-modal">!</span></h2>
+            <textarea placeholder="What's happening?" class="textarea"></textarea>
+            <button class="tweetbutton two close-modal">Tweet</button>
+
+
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

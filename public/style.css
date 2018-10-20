@@ -1,0 +1,147 @@
+body {
+    display: grid;
+    grid-template-rows: 46px 360px 46px 1fr;
+
+}
+
+header {
+    background: white;
+
+}
+
+
+.tweetbutton {
+    border-radius: 50px;
+    background-color: #5d7ebe;
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    width: 60px;
+    font-size: 11px;
+    position: relative;
+    
+ }
+
+.delbutton {
+    border-radius: 50px;
+    background-color: #5d7ebe;
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    width: 60px;
+    font-size: 11px;
+    position: relative;
+ }
+
+.follow {
+    border-radius: 5px;
+   background-color: white;
+   float: right;
+
+   
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signup {
+   
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: #5d7ebe;
+    width: 275px;
+    margin-left: 50px;
+    margin-top: 10px; 
+    height: 45px;
+ 
+ 
+ }
+#signuptext {
+    text-align: center;
+}
+
+.one {
+    margin-left: 1150px;
+}
+
+.two {
+    float: right;
+}
+
+p {
+    margin-top: 10px;
+}
+
+i {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+
+#cover {
+    background-image: url(roadtree.jpg);
+    background-size: 100%;
+    height: auto;
+}
+
+
+
+
+nav {
+    background: white;
+    text-align: center;
+    text-decoration: gray;
+    text-emphasis: bold;
+    padding-top: 15px;
+    height: 5px;
+}
+
+main {
+    background: #E6ECF0;
+}
+
+.container {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 15px;
+}
+
+.modal-container {
+            background: rgba(20, 23, 26, .7);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+}
+
+.modal {
+    width: 600px;
+    margin: 40px auto;
+    height: 180px;
+    background: white;
+    border-radius: 7px;
+    padding: 0 15px 10px;
+    text-align: center;
+}
+
+.fab {
+    margin-left: 125px;
+    color: #2499EC; 
+ }
+
+ .hide {
+    display: none;
+}
