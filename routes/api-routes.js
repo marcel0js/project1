@@ -22,13 +22,13 @@ module.exports = function (app) {
       });
   });
  
-  app.delete('/api/Tweet', function (req, res) {
-    db.Tweets.delete(req.body)
-      .then(function (tweets) {
-        res.json(tweets);
-      })
-      .catch(function (err) {
-        res.json(err);
-      });
-  });
-}
+  app.delete('/api/Tweet/:id', function (req, res, next) {
+    db.Tweet.findByIdAndRemove({
+            _id: req.params.id
+        })
+        .then(function () {
+            res.send('ok')
+        })
+
+});
+};

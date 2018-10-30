@@ -1,7 +1,19 @@
 body {
     display: grid;
     grid-template-rows: 46px 360px 46px 1fr;
+    min-height: 100vh;
+    grid-gap: 5px;
 
+}
+
+.handle-div {
+    display: flex;
+    align-items: center;
+}
+
+.tweet {
+    display: flex;
+    padding: 20px;
 }
 
 header {
@@ -10,70 +22,27 @@ header {
 }
 
 
-.tweetbutton {
-    border-radius: 50px;
-    background-color: #5d7ebe;
-    color: white;
+
+
+.logo {
+    z-index: 1;
+    position: absolute;
+    border-radius: 100%;
+    margin-top: 285px;
+    margin-left: 105px;
+
+}
+
+
+.home {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    height: 25px;
-    width: 60px;
-    font-size: 11px;
-    position: relative;
-    
- }
-
-.delbutton {
-    border-radius: 50px;
-    background-color: #5d7ebe;
-    color: white;
+    font-size: 12px;
     font-weight: bold;
-    height: 25px;
-    width: 60px;
-    font-size: 11px;
-    position: relative;
- }
+    color: gray;
+    margin-top: -20px;
+    margin-left: 170px;
 
-.follow {
-    border-radius: 5px;
-   background-color: white;
-   float: right;
-
-   
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.signup {
-   
-    border-radius: 50px;
-    color: white;
-    font-weight: bold;
-    background-color: #5d7ebe;
-    width: 275px;
-    margin-left: 50px;
-    margin-top: 10px; 
-    height: 45px;
- 
- 
- }
-#signuptext {
-    text-align: center;
-}
-
-.one {
-    margin-left: 1150px;
-}
-
-.two {
-    float: right;
-}
-
-p {
-    margin-top: 10px;
 }
 
 i {
@@ -82,15 +51,152 @@ i {
 }
 
 
+h3 {
+    font-weight: bold;
+}
 
-#cover {
-    background-image: url(roadtree.jpg);
-    background-size: 100%;
-    height: auto;
+
+.tweetbutton {
+   border-radius: 50px;
+   background-color: #5d7ebe;
+   color: white;
+   font-weight: bold;
+   height: 25px;
+   width: 60px;
+   font-size: 11px;
 }
 
 
 
+
+.feed {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 15px;
+}
+
+
+.epa-heading {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.epa-twitter {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: gray;
+ 
+}
+
+.left-feed {
+    background: #E6ECF0;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.left-text {
+    font-size: 13.5px;
+    margin-top: 15px;
+    margin-left: 20px;
+    line-height: 17px;
+}
+
+.tweet-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 75px;
+    
+
+}
+
+.center-feed {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 45px;
+    
+}
+
+.right-feed {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 45px;
+    background: white;
+    
+}
+
+
+
+.text-signup {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #5B6A73;
+     line-height: 17px
+}
+
+.signup {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-display: bold;
+}
+
+
+.center-feed {
+    background: white;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.signup {
+   
+   border-radius: 50px;
+   color: white;
+   font-weight: bold;
+   background-color: #5d7ebe;
+   width: 275px;
+   margin-left: 50px;
+   margin-top: 10px; 
+   height: 45px;
+
+
+}
+
+
+.one {
+    margin-left: 1000px;
+    background-color: #5d7ebe;
+}
+
+
+.textarea {
+    margin-top: 10px;
+    margin-left: 60px;
+    float: center;
+}
+
+p {
+    margin-top: 10px;
+}
+
+
+
+#cover {
+    background-image: url(roadtree.jpg);
+    background-size: 600px 600px 280px;
+}
+
+.fab {
+    margin-left: 125px;
+    color: #2499EC; 
+ }
 
 nav {
     background: white;
@@ -109,13 +215,9 @@ main {
     width: 1190px;
     margin: 0 auto;
     position: relative;
+    
 }
 
-.feed {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 15px;
-}
 
 .modal-container {
             background: rgba(20, 23, 26, .7);
@@ -137,11 +239,28 @@ main {
     text-align: center;
 }
 
-.fab {
-    margin-left: 125px;
-    color: #2499EC; 
- }
 
- .hide {
+.panda-avi {
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.handle1{
+    font-size: 12px;
+    margin-left: 10px;
+    
+}
+
+.handle2{
+    font-size: 12px;
+    margin-left: 10px;
+    
+}
+
+
+
+
+.hide {
     display: none;
 }

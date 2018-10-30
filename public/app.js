@@ -42,19 +42,13 @@ $.get('api/tweet')
      }
  })
 
- const deleteAll = function(e){
+ $('.delbutton').on('click', '.center-feed', function () {
+    const id = $(this).data('id')
     $.ajax({
-        url: '/api/Tweet',
-        type: 'DELETE',
-        success: function(response) {
-            alert('Deleting Tweets');
-            location.reload(true);
-        },
-        error: function(err){
-            console.log(err);
-        }
+        method: 'delete',
+        url: `/api/Tweet/${id}`
+  ​
+      })
+      .then(getTweet())
 
-      });
- }
-
- $('.delbutton').on('click', deleteAll);
+    });
